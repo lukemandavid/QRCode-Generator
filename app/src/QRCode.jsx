@@ -6,13 +6,12 @@ export default function QRCode(props) {
   let btn = document.getElementById("btn");
   let img = document.getElementById("img");
   let qrcode = document.getElementsByClassName("qrcode-container");
-  let [source, setSource] = React.useState("");
+  let [source, setSource] = React.useState();
   function myFunction() {
-    if (input.value.length >= 0) {
-      setSource(
-        (source =
+    if (input.value.length > 0) {
+      setSource(source =
           "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" +
-          input.value)
+          input.value
       );
     }
   }

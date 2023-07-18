@@ -33,24 +33,6 @@ body {
 }
 .container input.shake {
   background: red;
-  animation: error 0.1s infinite 2s;
-}
-@keyframes error {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(5px);
-  }
-  50% {
-    transform: translateX(0);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
 .container .qrcode-container {
   display: none;
@@ -70,4 +52,22 @@ body {
   border: 0;
   background: #0388fc;
   cursor: pointer;
+}
+@media screen and (max-width: 350px) {
+  .container {
+    width: 300px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container {
+    width: 300px;
+    padding: 20px 20px;
+  }
+}
+@media screen and (max-width: 310px) {
+  .container {
+    width: 260px;
+    padding: 20px 10px;
+  }
 }
